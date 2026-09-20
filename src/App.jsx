@@ -4,7 +4,7 @@ import Hero from './components/Hero';
 import Services from './components/Services';
 import Gallery from './components/Gallery';
 import WhyUs from './components/WhyUs';
-import Testimonials from './components/Testimonials';
+import FAQ from './components/FAQ';
 import BookingForm from './components/BookingForm';
 import Footer from './components/Footer';
 import WhatsAppFloat from './components/WhatsAppFloat';
@@ -17,16 +17,16 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-dark-950 text-neutral-100 font-sans selection:bg-gold-500/30 selection:text-gold-200">
+    <div className="w-full max-w-full overflow-x-hidden min-h-screen bg-dark-950 text-neutral-100 font-sans selection:bg-gold-500/30 selection:text-gold-200 relative">
       {/* Fixed Navigation Header */}
       <Navbar />
 
       {/* Main Content */}
-      <main>
+      <main className="w-full max-w-full overflow-x-hidden">
         {/* Hero Dobra Principal */}
         <Hero />
 
-        {/* Nossos Serviços (Cards com Lift) */}
+        {/* Nossos Serviços (Menu Editorial de Alta Costura) */}
         <Services onSelectService={handleSelectService} />
 
         {/* Galeria de Trabalhos Estilo Instagram */}
@@ -35,8 +35,8 @@ export default function App() {
         {/* Por que Escolher a Emilia Beauty (Diferenciais) */}
         <WhyUs />
 
-        {/* Depoimentos de Clientes Satisfeitas */}
-        <Testimonials />
+        {/* Perguntas Frequentes (Accordion FAQ) */}
+        <FAQ />
 
         {/* Formulário de Pré-Agendamento Flutuante */}
         <BookingForm preselectedService={preselectedService} />

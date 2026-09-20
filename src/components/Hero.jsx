@@ -17,9 +17,9 @@ export default function Hero() {
       </div>
 
       {/* Floating Gold Glow Effects */}
-      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[350px] bg-gold-500/10 blur-[130px] rounded-full pointer-events-none"></div>
+      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-full max-w-[500px] h-[350px] bg-gold-500/10 blur-[140px] rounded-full pointer-events-none"></div>
 
-      <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 text-center">
+      <div className="relative z-10 w-full max-w-5xl mx-auto px-4 sm:px-6 text-center">
         {/* Luxury Badge */}
         <div className="inline-flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-1.5 rounded-full bg-dark-900/90 border border-gold-400/30 text-gold-300 text-[11px] sm:text-xs md:text-sm font-medium tracking-wide shadow-gold-sm mb-6 animate-float max-w-full truncate">
           <Sparkles className="w-3.5 h-3.5 text-gold-400 shrink-0" />

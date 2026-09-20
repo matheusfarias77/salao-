@@ -88,27 +88,27 @@ export default function BookingForm({ preselectedService }) {
   const todayStr = new Date().toISOString().split('T')[0];
 
   return (
-    <section id="agendamento" className="py-20 sm:py-28 relative bg-dark-950 overflow-hidden">
+    <section id="agendamento" className="py-24 sm:py-32 relative bg-dark-950 overflow-hidden w-full max-w-full">
       {/* Background radial gold glow */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] sm:w-[700px] h-[450px] bg-gold-500/10 blur-[180px] rounded-full pointer-events-none"></div>
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-[500px] h-[350px] bg-gold-500/5 blur-[170px] rounded-full pointer-events-none"></div>
 
-      <div className="max-w-3xl mx-auto px-4 sm:px-6 relative z-10">
+      <div className="w-full max-w-3xl mx-auto px-4 sm:px-6 relative z-10">
         {/* Section Heading */}
-        <div className="text-center max-w-2xl mx-auto mb-10 sm:mb-12">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-gold-500/10 border border-gold-400/30 text-gold-300 text-xs font-semibold tracking-wider uppercase mb-3">
+        <div className="text-center max-w-2xl mx-auto mb-12 sm:mb-16">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-gold-500/10 border border-[#D4AF37]/30 text-gold-300 text-xs font-medium tracking-wider uppercase mb-4">
             <Calendar className="w-3.5 h-3.5 text-gold-400" />
             Atendimento Exclusivo
           </div>
-          <h2 className="font-serif text-3xl sm:text-5xl font-bold text-neutral-100 mb-3 tracking-tight">
+          <h2 className="font-serif text-3xl sm:text-5xl font-bold text-neutral-100 mb-3 sm:mb-4 tracking-tight">
             Reserve seu <span className="text-gold-gradient italic font-normal">Momento</span>
           </h2>
-          <p className="text-neutral-400 text-xs sm:text-sm max-w-lg mx-auto">
+          <p className="text-neutral-400 font-light text-xs sm:text-sm max-w-lg mx-auto leading-relaxed">
             Preencha os dados abaixo para solicitar seu atendimento. Nossa recepção entrará em contato para confirmar a disponibilidade ideal.
           </p>
         </div>
 
         {/* Floating Luxury Glass Form Card */}
-        <div className="glass-card rounded-3xl p-5 sm:p-10 border border-gold-400/30 bg-gradient-to-b from-dark-850/95 to-dark-900/95 shadow-2xl backdrop-blur-xl relative">
+        <div className="glass-card rounded-3xl p-5 sm:p-10 border border-[#D4AF37]/30 bg-gradient-to-b from-dark-850/95 to-dark-900/95 shadow-xl backdrop-blur-xl relative">
           <div className="absolute top-0 right-0 w-28 h-28 bg-gold-400/5 rounded-bl-full pointer-events-none"></div>
 
           {!isSuccess ? (

@@ -59,13 +59,13 @@ export default function Footer() {
                 <a href="#galeria" className="hover:text-gold-300 transition-colors">Galeria Instagram</a>
               </li>
               <li>
-                <a href="#diferenciais" className="hover:text-gold-300 transition-colors">Diferenciais Coiffeur</a>
+                <a href="#diferenciais" className="hover:text-gold-300 transition-colors font-light">Diferenciais Coiffeur</a>
               </li>
               <li>
-                <a href="#depoimentos" className="hover:text-gold-300 transition-colors">Depoimentos</a>
+                <a href="#faq" className="hover:text-gold-300 transition-colors font-light">Perguntas Frequentes (FAQ)</a>
               </li>
               <li>
-                <a href="#agendamento" className="text-gold-400 font-semibold hover:underline">Solicitar Pré-Agendamento</a>
+                <a href="#agendamento" className="text-gold-400 font-medium hover:underline">Solicitar Pré-Agendamento</a>
               </li>
             </ul>
           </div>
