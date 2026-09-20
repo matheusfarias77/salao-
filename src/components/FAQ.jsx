@@ -32,7 +32,7 @@ export default function FAQ() {
   };
 
   return (
-    <section id="faq" className="py-24 sm:py-32 relative bg-dark-900 border-t border-neutral-900/80 overflow-hidden">
+    <section id="faq" className="w-full max-w-full py-24 sm:py-32 relative bg-dark-900 border-t border-neutral-900/80 overflow-hidden">
       {/* Subtle Glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-[500px] h-[350px] bg-gold-500/5 blur-[170px] rounded-full pointer-events-none"></div>
 

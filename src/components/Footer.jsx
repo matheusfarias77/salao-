@@ -8,9 +8,9 @@ export default function Footer() {
   };
 
   return (
-    <footer id="localizacao" className="relative bg-dark-950 border-t border-neutral-900 pt-16 sm:pt-20 pb-10 sm:pb-12 overflow-hidden">
+    <footer id="localizacao" className="w-full max-w-full relative bg-dark-950 border-t border-neutral-900 pt-16 sm:pt-20 pb-10 sm:pb-12 overflow-hidden">
       {/* Glow */}
-      <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-gold-500/5 blur-[160px] rounded-full pointer-events-none"></div>
+      <div className="absolute bottom-0 right-1/4 w-full max-w-[400px] h-[400px] bg-gold-500/5 blur-[160px] rounded-full pointer-events-none"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-12 mb-12 sm:mb-16">

@@ -3,7 +3,7 @@ import { Calendar, MessageCircle, Sparkles, Star, Scissors, Clock, ShieldCheck }
 
 export default function Hero() {
   return (
-    <section id="inicio" className="relative min-h-[92vh] flex items-center justify-center pt-28 pb-16 overflow-hidden">
+    <section id="inicio" className="w-full max-w-full relative min-h-[92vh] flex items-center justify-center pt-28 pb-16 overflow-hidden">
       {/* Background Image with Dark Luxury Vignette and Ambient Glow */}
       <div className="absolute inset-0 z-0">
         <img
