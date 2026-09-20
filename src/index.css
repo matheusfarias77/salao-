@@ -12,6 +12,11 @@
     background-color: #080808;
     color: #F3F4F6;
     overflow-x: hidden;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  section {
+    scroll-margin-top: 5rem;
   }
 
   /* Custom luxury scrollbar */

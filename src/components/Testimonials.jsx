@@ -4,22 +4,22 @@ import { Star, Quote, Sparkles } from 'lucide-react';
 
 export default function Testimonials() {
   return (
-    <section id="depoimentos" className="py-24 relative bg-dark-900 border-t border-neutral-900">
+    <section id="depoimentos" className="py-20 sm:py-28 relative bg-dark-900 border-t border-neutral-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gold-500/10 border border-gold-400/30 text-gold-300 text-xs font-semibold tracking-wider uppercase mb-4">
+        <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-gold-500/10 border border-gold-400/30 text-gold-300 text-xs font-semibold tracking-wider uppercase mb-3 sm:mb-4">
             <Sparkles className="w-3.5 h-3.5 text-gold-400" />
             Voz de Quem Confia
           </div>
-          <h2 className="font-serif text-3xl sm:text-5xl font-bold text-neutral-100 mb-4 tracking-tight">
+          <h2 className="font-serif text-3xl sm:text-5xl font-bold text-neutral-100 mb-3 sm:mb-4 tracking-tight">
             Experiências <span className="text-gold-gradient italic font-normal">Transformadoras</span>
           </h2>
-          <p className="text-neutral-400 text-base sm:text-lg">
+          <p className="text-neutral-400 text-sm sm:text-base leading-relaxed max-w-2xl mx-auto">
             Veja o que nossas clientes dizem sobre o cuidado, a técnica e a atmosfera da Emilia Beauty Coiffeur.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
           {testimonials.map((test) => (
             <div
               key={test.id}

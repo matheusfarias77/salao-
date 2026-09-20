@@ -21,21 +21,21 @@ export default function Hero() {
 
       <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 text-center">
         {/* Luxury Badge */}
-        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-dark-900/80 border border-gold-400/30 text-gold-300 text-xs sm:text-sm font-medium tracking-wide shadow-gold-sm mb-6 animate-float">
-          <Sparkles className="w-3.5 h-3.5 text-gold-400" />
-          <span>Salão de Alto Padrão em Realengo • RJ</span>
-          <span className="w-1.5 h-1.5 rounded-full bg-gold-400"></span>
-          <span className="text-neutral-400">De Terça a Sábado</span>
+        <div className="inline-flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-1.5 rounded-full bg-dark-900/90 border border-gold-400/30 text-gold-300 text-[11px] sm:text-xs md:text-sm font-medium tracking-wide shadow-gold-sm mb-6 animate-float max-w-full truncate">
+          <Sparkles className="w-3.5 h-3.5 text-gold-400 shrink-0" />
+          <span className="truncate">Salão de Alto Padrão em Realengo • RJ</span>
+          <span className="w-1.5 h-1.5 rounded-full bg-gold-400 shrink-0"></span>
+          <span className="text-neutral-400 shrink-0">De Terça a Sábado</span>
         </div>
 
         {/* Main Heading */}
-        <h1 className="font-serif text-4xl sm:text-6xl md:text-7xl font-bold tracking-tight text-neutral-100 leading-[1.1] mb-6">
+        <h1 className="font-serif text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-neutral-100 leading-[1.15] mb-5 sm:mb-6">
           Emilia Beauty <br />
           <span className="text-gold-gradient italic font-normal">Coiffeur</span>
         </h1>
 
         {/* Subtitle from salon bio */}
-        <p className="text-lg sm:text-xl md:text-2xl text-neutral-300 font-light max-w-3xl mx-auto mb-4 leading-relaxed">
+        <p className="text-sm sm:text-lg md:text-xl text-neutral-300 font-light max-w-2xl mx-auto mb-4 leading-relaxed px-2">
           “Protocolos exclusivos para realçar sua melhor versão.”
         </p>
 

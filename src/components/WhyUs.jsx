@@ -26,30 +26,30 @@ export default function WhyUs() {
   ];
 
   return (
-    <section id="diferenciais" className="py-24 relative bg-dark-900 border-t border-b border-neutral-900 overflow-hidden">
+    <section id="diferenciais" className="py-20 sm:py-28 relative bg-dark-900 border-t border-b border-neutral-900 overflow-hidden">
       {/* Glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[650px] h-[350px] bg-gold-500/5 blur-[170px] rounded-full pointer-events-none"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gold-500/10 border border-gold-400/30 text-gold-300 text-xs font-semibold tracking-wider uppercase mb-4">
+        <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-gold-500/10 border border-gold-400/30 text-gold-300 text-xs font-semibold tracking-wider uppercase mb-3 sm:mb-4">
             <Sparkles className="w-3.5 h-3.5 text-gold-400" />
             O Padrão Coiffeur
           </div>
-          <h2 className="font-serif text-3xl sm:text-5xl font-bold text-neutral-100 mb-4 tracking-tight">
+          <h2 className="font-serif text-3xl sm:text-5xl font-bold text-neutral-100 mb-3 sm:mb-4 tracking-tight">
             Por que escolher a <span className="text-gold-gradient italic font-normal">Emilia Beauty?</span>
           </h2>
-          <p className="text-neutral-400 text-base sm:text-lg">
+          <p className="text-neutral-400 text-sm sm:text-base leading-relaxed max-w-2xl mx-auto">
             Muito mais do que um salão de beleza, proporcionamos uma experiência de autocuidado, confiança e sofisticação em Realengo.
           </p>
         </div>
 
         {/* 4 Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
           {differentials.map((diff, index) => (
             <div
               key={index}
-              className="glass-card rounded-2xl p-7 flex flex-col justify-between glass-card-hover border border-neutral-800 hover:border-gold-400/40 bg-gradient-to-b from-dark-850 to-dark-900"
+              className="glass-card rounded-2xl p-6 sm:p-7 flex flex-col justify-between glass-card-hover border border-neutral-800 hover:border-gold-400/40 bg-gradient-to-b from-dark-850 to-dark-900"
             >
               <div>
                 <div className="w-14 h-14 rounded-xl bg-gold-500/10 border border-gold-400/30 flex items-center justify-center mb-6 shadow-gold-sm">
