@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    color-scheme: dark;
+  }
+  
+  body {
+    background-color: #080808;
+    color: #F3F4F6;
+    overflow-x: hidden;
+  }
+
+  /* Custom luxury scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #0D0D0D;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #2A2415;
+    border-radius: 4px;
+    border: 1px solid rgba(212, 175, 55, 0.2);
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #D4AF37;
+  }
+}
+
+@layer utilities {
+  .text-gold-gradient {
+    background: linear-gradient(135deg, #FFF0C2 0%, #E6C875 35%, #D4AF37 60%, #9B7811 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .border-gold-gradient {
+    border-image: linear-gradient(135deg, #FDE8A5 0%, #D4AF37 50%, #7D5B06 100%) 1;
+  }
+  
+  .bg-gold-metallic {
+    background: linear-gradient(135deg, #FCE6A4 0%, #E5C365 30%, #D4AF37 55%, #AA7C11 85%, #8B6406 100%);
+  }
+
+  .gold-glow {
+    box-shadow: 0 0 25px rgba(212, 175, 55, 0.25);
+  }
+
+  .gold-glow-hover:hover {
+    box-shadow: 0 0 35px rgba(212, 175, 55, 0.45);
+  }
+
+  .glass-card {
+    background: rgba(18, 18, 18, 0.7);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(212, 175, 55, 0.18);
+  }
+
+  .glass-card-hover {
+    transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .glass-card-hover:hover {
+    transform: translateY(-6px);
+    border-color: rgba(212, 175, 55, 0.45);
+    box-shadow: 0 16px 36px -10px rgba(0, 0, 0, 0.7), 0 0 25px rgba(212, 175, 55, 0.18);
+  }
+
+  .shimmer-btn {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .shimmer-btn::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+      60deg,
+      transparent 20%,
+      rgba(255, 255, 255, 0.35) 50%,
+      transparent 80%
+    );
+    transform: translateX(-100%);
+    transition: transform 0.8s ease-in-out;
+  }
+
+  .shimmer-btn:hover::after {
+    transform: translateX(100%);
+  }
+}
