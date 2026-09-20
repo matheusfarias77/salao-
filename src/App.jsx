@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Services from './components/Services';
+import BeforeAfterSlider from './components/BeforeAfterSlider';
+import AboutSpecialist from './components/AboutSpecialist';
 import Gallery from './components/Gallery';
 import WhyUs from './components/WhyUs';
 import FAQ from './components/FAQ';
@@ -17,32 +19,38 @@ export default function App() {
   };
 
   return (
-    <div className="w-full max-w-full overflow-x-hidden min-h-screen bg-dark-950 text-neutral-100 font-sans selection:bg-gold-500/30 selection:text-gold-200 relative">
-      {/* Fixed Navigation Header */}
+    <div className="w-full max-w-full overflow-x-hidden min-h-screen bg-[#FAFAFA] text-[#222222] font-sans selection:bg-[#C5A059]/25 selection:text-[#8A6208] relative">
+      {/* Fixed Luxury Black Header */}
       <Navbar />
 
       {/* Main Content */}
       <main className="w-full max-w-full overflow-x-hidden">
-        {/* Hero Dobra Principal */}
+        {/* 1. Hero Dobra Principal Editorial */}
         <Hero />
 
-        {/* Nossos Serviços (Menu Editorial de Alta Costura) */}
+        {/* 2. Serviços em Layout Assimétrico Revista de Moda */}
         <Services onSelectService={handleSelectService} />
 
-        {/* Galeria de Trabalhos Estilo Instagram */}
+        {/* 3. Slider Interativo de Antes e Depois */}
+        <BeforeAfterSlider />
+
+        {/* 4. A Especialista & Nosso Espaço */}
+        <AboutSpecialist />
+
+        {/* 5. Galeria de Inspirações Instagram com Lightbox */}
         <Gallery onSelectService={handleSelectService} />
 
-        {/* Por que Escolher a Emilia Beauty (Diferenciais) */}
+        {/* 6. Diferenciais e Padrão Coiffeur */}
         <WhyUs />
 
-        {/* Perguntas Frequentes (Accordion FAQ) */}
+        {/* 7. Perguntas Frequentes (FAQ Accordion Oficial) */}
         <FAQ />
 
-        {/* Formulário de Pré-Agendamento Flutuante */}
+        {/* 8. Formulário Flutuante de Pré-Agendamento */}
         <BookingForm preselectedService={preselectedService} />
       </main>
 
-      {/* Rodapé com Endereço e Horários de Realengo RJ */}
+      {/* Rodapé Preto de Luxo com Endereço e Horários de Realengo RJ */}
       <Footer />
 
       {/* Botão Flutuante de WhatsApp */}

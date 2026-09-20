@@ -5,75 +5,87 @@
 @layer base {
   html {
     scroll-behavior: smooth;
-    color-scheme: dark;
+    color-scheme: light;
   }
   
   body {
-    background-color: #080808;
-    color: #F3F4F6;
+    background-color: #FAFAFA;
+    color: #222222;
     overflow-x: hidden;
     -webkit-tap-highlight-color: transparent;
+    font-family: 'Montserrat', 'Plus Jakarta Sans', sans-serif;
   }
 
   section {
     scroll-margin-top: 5rem;
   }
 
-  /* Custom luxury scrollbar */
+  /* Custom light luxury scrollbar */
   ::-webkit-scrollbar {
-    width: 8px;
+    width: 7px;
   }
   ::-webkit-scrollbar-track {
-    background: #0D0D0D;
+    background: #F5F2EB;
   }
   ::-webkit-scrollbar-thumb {
-    background: #2A2415;
+    background: #DACDC0;
     border-radius: 4px;
-    border: 1px solid rgba(212, 175, 55, 0.2);
+    border: 1px solid rgba(197, 160, 89, 0.2);
   }
   ::-webkit-scrollbar-thumb:hover {
-    background: #D4AF37;
+    background: #C5A059;
   }
 }
 
 @layer utilities {
   .text-gold-gradient {
-    background: linear-gradient(135deg, #FFF0C2 0%, #E6C875 35%, #D4AF37 60%, #9B7811 100%);
+    background: linear-gradient(135deg, #B8933E 0%, #C5A059 40%, #8A6208 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .text-gold-metallic {
+    background: linear-gradient(135deg, #997316 0%, #C5A059 50%, #8A6208 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
   
-  .border-gold-gradient {
-    border-image: linear-gradient(135deg, #FDE8A5 0%, #D4AF37 50%, #7D5B06 100%) 1;
-  }
-  
   .bg-gold-metallic {
-    background: linear-gradient(135deg, #FCE6A4 0%, #E5C365 30%, #D4AF37 55%, #AA7C11 85%, #8B6406 100%);
+    background: linear-gradient(135deg, #F5E6B8 0%, #D8BA68 35%, #C5A059 70%, #A37C1B 100%);
+  }
+
+  .bg-gold-btn {
+    background: linear-gradient(135deg, #C5A059 0%, #B8933E 100%);
   }
 
   .gold-glow {
-    box-shadow: 0 0 25px rgba(212, 175, 55, 0.25);
+    box-shadow: 0 4px 20px rgba(197, 160, 89, 0.25);
   }
 
   .gold-glow-hover:hover {
-    box-shadow: 0 0 35px rgba(212, 175, 55, 0.45);
+    box-shadow: 0 8px 30px rgba(197, 160, 89, 0.4);
   }
 
-  .glass-card {
-    background: rgba(18, 18, 18, 0.7);
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
-    border: 1px solid rgba(212, 175, 55, 0.18);
+  .luxury-card {
+    background: #FFFFFF;
+    border: 1px solid #ECE7DE;
+    box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.04);
   }
 
-  .glass-card-hover {
-    transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  .luxury-card-hover {
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   }
   
-  .glass-card-hover:hover {
-    transform: translateY(-6px);
-    border-color: rgba(212, 175, 55, 0.45);
-    box-shadow: 0 16px 36px -10px rgba(0, 0, 0, 0.7), 0 0 25px rgba(212, 175, 55, 0.18);
+  .luxury-card-hover:hover {
+    transform: translateY(-4px);
+    border-color: rgba(197, 160, 89, 0.45);
+    box-shadow: 0 20px 45px -10px rgba(0, 0, 0, 0.08), 0 0 20px rgba(197, 160, 89, 0.12);
+  }
+
+  .floating-card {
+    background: #FFFFFF;
+    border: 1px solid #E8E2D8;
+    box-shadow: 0 25px 60px -15px rgba(0, 0, 0, 0.07), 0 0 1px rgba(0, 0, 0, 0.05);
   }
 
   .shimmer-btn {
@@ -91,7 +103,7 @@
     background: linear-gradient(
       60deg,
       transparent 20%,
-      rgba(255, 255, 255, 0.35) 50%,
+      rgba(255, 255, 255, 0.45) 50%,
       transparent 80%
     );
     transform: translateX(-100%);
